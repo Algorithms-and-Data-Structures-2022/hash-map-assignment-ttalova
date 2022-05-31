@@ -84,7 +84,7 @@ namespace assignment {
   std::optional<int> ChainingHashMap::Search(int key) const {
 
     // вычисление индекса ячейки для указанного ключа
-    const int index = hash(key, buckets_.size())
+    const int index = hash(key, buckets_.size());
 
     // Проходимся по всем элемента в ячейке словаря.
     // В худшем случае все элементы попали в одну ячейку словаря и сложность поиска ~ O(N).
